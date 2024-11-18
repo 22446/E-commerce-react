@@ -1,6 +1,7 @@
 import React from 'react'
 import {
   createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from "react-router-dom";
 import { Offline } from "react-detect-offline"
@@ -27,7 +28,7 @@ import AuthContext from './Contexts/AuthContext';
 
 export default function App() {
 
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {path:'',element:<Layout/>,children:[
       {path:'',element:<Protectedroute>
         <Home/>
