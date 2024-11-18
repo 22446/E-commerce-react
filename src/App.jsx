@@ -9,7 +9,6 @@ import Home from './Components/Home/Home';
 import {Toaster} from 'react-hot-toast';
 import Login from './Components/Login/Login';
 import Register from './Components/Register/Register';
-import AuthContext from './Contexts/authContext';
 import Protectedroute from './Components/Protectedroute/Protectedroute';
 import Protectedpathauth from './Components/Protectedroute/Protectedpathauth';
 import Product from './Components/Product/Product';
@@ -24,6 +23,7 @@ import AddTowishListcontext from './Contexts/AddTowishListcontext';
 import Wishlist from './Components/Wishlist/Wishlist';
 import Categorydetails from './Components/Categorydetails/Categorydetails';
 import Branddetails from './Components/Branddetails/Branddetails';
+import AuthContext from '../Contexts/AuthContext';
 
 export default function App() {
 
