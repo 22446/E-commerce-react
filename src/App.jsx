@@ -23,7 +23,7 @@ import AddTowishListcontext from './Contexts/AddTowishListcontext';
 import Wishlist from './Components/Wishlist/Wishlist';
 import Categorydetails from './Components/Categorydetails/Categorydetails';
 import Branddetails from './Components/Branddetails/Branddetails';
-import AuthContext from '../Contexts/AuthContext';
+import AuthContext from './Contexts/AuthContext';
 
 export default function App() {
 

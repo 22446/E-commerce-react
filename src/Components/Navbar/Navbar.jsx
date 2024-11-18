@@ -1,9 +1,10 @@
 import React, { useContext } from "react";
 import {Link,NavLink, useNavigate} from 'react-router-dom'
 import logo from "../../assets/images/freshcart-logo.svg";
-import { authcontext } from "../../Contexts/authContext";
+
 import { AddtoCartContext } from "../../Contexts/AddtoCardContext";
 import { wishtListContext } from "../../Contexts/AddTowishListcontext";
+import { authcontext } from "../../Contexts/AuthContext";
 export default function Navbar() {
   const res= useContext(wishtListContext)
   
