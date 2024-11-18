@@ -1,0 +1,18 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.root {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content {
+    padding-top: 60px; /* Adjust this value to match the height of the Navbar */
+    flex: 1; /* Ensure the content takes up remaining space */
+}
