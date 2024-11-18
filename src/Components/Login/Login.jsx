@@ -28,7 +28,7 @@ export default function Login() {
 
 
         navigate('/')
-        console.log(res.data.token)
+        
         setIsClicede(false)
       }).catch(function(err){
         setfalseMessage(err.response.data.message)
@@ -36,7 +36,7 @@ export default function Login() {
         setfalseMessage(null)
           
         }, 2000);
-        console.log(err)
+      
         setIsClicede(false)
 
       })
@@ -130,6 +130,6 @@ export default function Login() {
         </form>
       </div>
     </div>
-</section>;
+</section>
   </div>
 }

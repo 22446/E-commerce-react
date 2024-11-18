@@ -16,10 +16,10 @@ export default function Addtocart({children}) {
         }).then(function(res){
            
             queryClient.invalidateQueries('getcart')
-            console.log(res)
+           
             return true
         }).catch(function(err){
-            console.log(err)
+            
             return false
         })
     }
@@ -28,10 +28,10 @@ export default function Addtocart({children}) {
             {count},{headers:{token:localStorage.getItem('userToken')}}
         ).then(function(res){
             queryClient.invalidateQueries('getcart')
-            console.log(res)
+           
             return true
         }).catch(function(err){
-            console.log(err)
+            
             return false
         })
     }
@@ -40,10 +40,10 @@ export default function Addtocart({children}) {
             {headers:{token:localStorage.getItem('userToken')}}
         ).then(function(res){
             queryClient.invalidateQueries('getcart')
-            console.log(res)
+           
             return true
         }).catch(function(err){
-            console.log(err)
+            
             return false
         })
     }
@@ -52,10 +52,10 @@ export default function Addtocart({children}) {
         {headers:{token:localStorage.getItem('userToken')}}
     ).then(function(res){
         queryClient.invalidateQueries('getcart')
-        console.log(res)
+       
         return true
     }).catch(function(err){
-        console.log(err)
+        
         return false
     })
 }

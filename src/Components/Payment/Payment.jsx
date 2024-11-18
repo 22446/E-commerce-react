@@ -20,10 +20,10 @@ export default function Payment() {
             {headers:{token:localStorage.getItem('userToken')}}
         ).then(function(res){
             window.open(res.data.session.url,'_self')
-            console.log(res)
+          
             setIsCliced(false)
         }).catch(function(err){
-            console.log(err)
+          
             setIsCliced(false)
 
         })

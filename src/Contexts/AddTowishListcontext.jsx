@@ -12,12 +12,12 @@ export default function AddTowishListcontext({ children }) {
         { headers: { token: localStorage.getItem("userToken") } }
       )
       .then(function (res) {
-        console.log(res);
+        
         query.invalidateQueries("allWishList");
         return true;
       })
       .catch(function (err) {
-        console.log(err);
+       
         return false;
       });
   }
@@ -27,12 +27,12 @@ export default function AddTowishListcontext({ children }) {
         headers: { token: localStorage.getItem("userToken") },
       })
       .then(function (res) {
-        console.log(res);
+        
         query.invalidateQueries("allWishList");
         return true;
       })
       .catch(function (err) {
-        console.log(err);
+       
         return false;
       });
   }

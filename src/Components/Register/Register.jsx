@@ -39,7 +39,7 @@ export default function Register() {
           }, 2000);
         setiscliced(false)
         navigate('/login')
-          console.log(res);
+         
         })
         .catch(function (err) {
             setmessageFalse(err.response.data.message);

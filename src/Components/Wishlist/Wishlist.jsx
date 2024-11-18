@@ -8,7 +8,7 @@ import { TailSpin } from 'react-loader-spinner'
 
 export default function Wishlist() {
     const {data,isLoading,removeFromWishList}= useContext(wishtListContext)
-    console.log(data)
+
     const {addProductToCart}=  useContext(AddtoCartContext)
     const [loadingId, setLoadingId] = useState(null);
     async function handleDeleteFromWishList(id){

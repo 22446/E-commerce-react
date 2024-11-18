@@ -55,7 +55,7 @@ export default function Cart() {
   }
   
 
-  console.log(data);
+ 
   return (
     <section className="pt-5 my-5">
       <div className="container bg-main-light  py-5   shadow">

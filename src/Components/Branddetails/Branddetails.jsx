@@ -33,7 +33,7 @@ export default function Branddetails() {
     setLoadingId(null);
   }
   const { id } = useParams();
-  console.log(id);
+  
   function GetAllProduct() {
     return axios.get("https://ecommerce.routemisr.com/api/v1/products");
   }
@@ -61,8 +61,7 @@ export default function Branddetails() {
       </div>
     );
   }
-  console.log(res.data);
-  console.log(data?.data.data);
+ 
   return (
     <section className="pt-4">
       <div className="container">
